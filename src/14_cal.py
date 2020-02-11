@@ -31,8 +31,6 @@ import sys
 import calendar
 from datetime import datetime
 
-print(sys.argv)
-
 l = len(sys.argv)
 m = 0
 y = 0
@@ -49,8 +47,6 @@ elif l == 3:
     m = int(sys.argv[1])
     y = int(sys.argv[2])
 else:
-    print('Please prodive the necessary arguments')
+    print('Please provide the necessary arguments')
 
-
-print(f"month is {m} and year is {y}")
 print(calendar.month(y,m))
